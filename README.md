@@ -1,10 +1,15 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Concepts that are being convered in this project:
 
-## Available Scripts
-
-In the project directory, you can run:
+1) React Hooks
+2) Google's User Authentication (Firebase)
+3) Real-time Database (Firebase)
+4) React Context API (Redux)
+5) React Router
+6) Material UI (Core + Icons)
+7) CSS Variables + Flexbox
+8) This app will be available in production mode (Host provider: FIREBASE)
 
 ### `npm start`
 
