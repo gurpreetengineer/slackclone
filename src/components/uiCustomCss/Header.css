@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* padding: 10px 0;  */
+  background-color: var(--slack-color);
+  color: #FFFFFF;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0.3;
+  opacity: 0.8;
+  margin: 0 20px;
+
+}
+.header__search {
+  display: flex;
+  justify-content: center; /*Center content horizontall IF USING "display: FLEX" */
+  align-items: center;  /* Center Content vertically*/
+  flex: 0.4;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 6px;
+  border-radius: 5px;
+}
+.header__search > input{
+  border: 0px;
+  width: -webkit-fill-available;
+  background: transparent;
+  margin: 0px 13px;
+  outline: none; /* To hide outline after input is clicked*/
+  color: #FFF; /*input field value color */
+}
+.header__search > input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header__search > .header__seachIcon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  flex: 0.3;
+  justify-content: space-between;
+  margin-right: 16px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+
