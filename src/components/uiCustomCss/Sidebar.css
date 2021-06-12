@@ -1,11 +1,51 @@
 .sidebar {
   max-width: 260px;
   height: 100%;
-  flex: 0.7;
-}
-.sidebar > .sidebar__logo_container {
+  background-color: var(--slack-color);
 
 }
-.sidebar > .sidebar__logo_container > .sidebar__editLogo {
-  height: 26px;
+.sidebar__logo_container {
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.sidebar__logo_container > .sidebar__editLogo {
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.sidebar__slack_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar__login_name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  color: white;
+  font-weight: 900;
+}
+.sidebar__header {
+  padding: 10px;
+
+}
+.sidebar__header > .sidebar__user_info > .sidebar__username {
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+
+.sidebar__header > .sidebar__user_info {
+  display: flex;
+  align-items: center;
+}
+.sidebar__header > .sidebar__user_info > .MuiSvgIcon-root {
+   color: green;
+   font-size: 17px;
+   margin-top: 1px;
+   margin-right: 2px;
 }

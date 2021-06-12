@@ -1,0 +1,17 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  padding-left: 2px;
+  cursor: pointer;
+  /* justify-content: center; */
+}
+.sidebarOption:hover {
+  background-color: #340E36;
+}
+
+.sidebarOption__hash {
+  margin-left: 5px;
+  margin-right: 1px;
+}

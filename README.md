@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Let's Create a Slack Clone, fellas! Shall We?
 
 ### Concepts that are being convered in this project:
 

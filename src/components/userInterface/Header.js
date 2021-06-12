@@ -17,7 +17,7 @@ function Header() {
         <SearchIcon className="header__seachIcon" />
       </div>
       <div className="header__right">
-        <HelpOutlineIcon />
+        <HelpOutlineIcon className="header__right_help_icon" />
         <Avatar className="header__avatar" alt="UserName Here" src="" />
       </div>
 
