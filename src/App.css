@@ -1,3 +1,7 @@
 body {
   --slack-color: #3F0F40;
 }
+
+.app__sidebar_container {
+  display: flex;
+}
