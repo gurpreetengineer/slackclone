@@ -1,0 +1,11 @@
+.sidebar {
+  max-width: 260px;
+  height: 100%;
+  flex: 0.7;
+}
+.sidebar > .sidebar__logo_container {
+
+}
+.sidebar > .sidebar__logo_container > .sidebar__editLogo {
+  height: 26px;
+}
