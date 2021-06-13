@@ -8,8 +8,9 @@
 4) React Context API (Redux)
 5) React Router
 6) Material UI (Core + Icons)
-7) CSS Variables + Flexbox
-8) This app will be available in production mode (Host provider: FIREBASE)
+7) CSS Variables + Flexbox (With Beautiful UI)
+8) Responsive Design
+9) This app will be available in production mode (Host provider: FIREBASE)
 
 ### `npm start`
 

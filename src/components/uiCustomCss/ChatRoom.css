@@ -1,0 +1,31 @@
+.chat {
+  /* flex: 0.7; */
+  flex: 1;
+}
+.chat > .chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px 15px 20px;
+  border-bottom: 1px solid lightgray;
+}
+.chat__header > .chat__header_left > .chat__header_channel_name {
+  display: flex;
+  align-items: center;
+}
+.chat__header > .chat__header_left > .chat__header_channel_name > .MuiSvgIcon-root {
+  margin-left: 5px;
+}
+
+.chat__header > .chat__header_right > p{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.chat__header > .chat__header_right > p > .MuiSvgIcon-root{
+  font-size: 16px;
+  margin-right: 5px !important;
+}
+.chat__header_channel_name {
+  text-transform: lowercase;
+}

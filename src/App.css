@@ -1,7 +1,10 @@
 body {
   --slack-color: #3F0F40;
+  overflow: hidden;
 }
 
-.app__sidebar_container {
+.app__body {
   display: flex;
+  height: 100vh;
+  /* flex: auto; */
 }

@@ -1,0 +1,26 @@
+.messages {
+  display: flex;
+  padding: 23px;
+}
+
+.messages__image_container {
+  margin-right: 10px;
+  position: relative;
+  object-fit: contain;
+}
+
+.messages__image_container img {
+  width:50px;
+  height:50px;
+  max-width: 100%;
+}
+.messages__timestamp {
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 10px;
+  color: #6d6d6d;
+}
+.messages_info_timestamp_container {
+  display: flex;
+  align-items: center;
+}
