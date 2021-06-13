@@ -1,8 +1,7 @@
 .sidebar {
   max-width: 260px;
-  height: 100%;
+  height: 95.7vh;
   background-color: var(--slack-color);
-
 }
 .sidebar__logo_container {
   border-radius: 100%;
@@ -31,6 +30,8 @@
 }
 .sidebar__header {
   padding: 10px;
+  border-top: 1px solid #49274B;
+  border-bottom: 1px solid #49274B;
 
 }
 .sidebar__header > .sidebar__user_info > .sidebar__username {
@@ -48,4 +49,8 @@
    font-size: 17px;
    margin-top: 1px;
    margin-right: 2px;
+}
+.sidebar > hr {
+  margin: 10px 0;
+  border: 1px solid #49274B;
 }

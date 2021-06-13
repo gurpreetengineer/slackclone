@@ -5,6 +5,7 @@
   font-size: 12px;
   padding-left: 2px;
   cursor: pointer;
+  padding: 10px 0;
   /* justify-content: center; */
 }
 .sidebarOption:hover {
@@ -12,6 +13,16 @@
 }
 
 .sidebarOption__hash {
-  margin-left: 5px;
-  margin-right: 1px;
+  /* margin-left: 5px;
+  margin-right: 1px; */
+  padding: 0 10px;
+}
+.sidebarOption > .MuiSvgIcon-root {
+  /* width: 17px; */
+  height: 17px;
+  padding: 0 10px;
+  opacity: 0.8;
+}
+.sidebarOption > h3 {
+  opacity: 0.8;
 }
