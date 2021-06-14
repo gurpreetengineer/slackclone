@@ -17,9 +17,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import AddIcon from '@material-ui/icons/Add'
 
 import db from '../../firebase/firebase';
+import { useStateValue } from "../../authentication/authContext";
 
 function Sidebar() {
   const [channels, setChannels] = useState([])
+  const [{user}] = useStateValue();
   
   useEffect(()=> {
     db.collection('rooms').onSnapshot(snapshot => {
@@ -34,7 +36,7 @@ function Sidebar() {
       <div className="sidebar__header">
         <div className="sidebar__slack_info">
           <div>
-            <div className="sidebar__login_name">__LoginUser__</div>
+            <div className="sidebar__login_name">Why Futz</div>
           </div>
           <div className="sidebar__logo_container">
             <img src={EditLogo} className="sidebar__editLogo" />
@@ -42,7 +44,7 @@ function Sidebar() {
         </div>
         <div className="sidebar__user_info">
             <FiberManualRecordIcon className="sidebar__fiber_manual_icon" />
-            <h2 className="sidebar__username">UserName</h2>
+            <h2 className="sidebar__username">{user ? user.displayName : "Anonymous"}</h2>
         </div>
       </div>
       <SidebarOption Icon={InsertCommentIcon} Title="Threads" />

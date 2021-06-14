@@ -2,14 +2,6 @@ import React from "react";
 import "../uiCustomCss/Messages.css";
 
 function Messages({ Username, UserImage, Message, Timestamp }) {
-  console.log(
-    "Username, UserImage, Message, Timestamp >> ",
-    Username,
-    UserImage,
-    Message,
-    Timestamp
-  );
-  console.log("finalTime: ", Date(Timestamp.seconds * 1000));
   return (
     <div className="messages">
       <div className="messages__image_container">

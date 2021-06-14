@@ -1,18 +1,20 @@
-import React, { useState, Fragment } from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/userInterface/Header";
 import Sidebar from "./components/userInterface/Sidebar";
 import ChatRoom from "./components/userInterface/ChatRoom";
 import Login from "./authentication/Login";
+import { useStateValue } from "./authentication/authContext";
 
 function App() {
-  const [isUserLoggedIn, setIsUserLoggedIn] = useState();
+  const [{user}, dispatch] = useStateValue();
+
   return (
     <div className="app">
       <Router>
         {/* Header */}
-        {isUserLoggedIn ? (
+        {user ? (
           <Fragment>
             <Header />
             <div className="app__body">

@@ -29,3 +29,8 @@
 .chat__header_channel_name {
   text-transform: lowercase;
 }
+
+/* .chat__messages {
+  display: flex;
+  justify-content: space-between;
+} */

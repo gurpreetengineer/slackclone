@@ -5,6 +5,7 @@ import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import "../uiCustomCss/ChatRoom.css";
 import Messages from "./Messages";
+import ChatInput from "./ChatInput";
 
 function ChatRoom() {
   const { roomId } = useParams();
@@ -22,7 +23,6 @@ function ChatRoom() {
 
   }, [roomId]);
 
-  console.log("Messages >> ", roomMessages)
   return (
     <div className="chat">
       <div className="chat__header">
@@ -43,6 +43,8 @@ function ChatRoom() {
           <Messages key={`${message.username}${message.timestamp}`} Username={message.username} UserImage={message.userImage} Message={message.message} Timestamp={message.timestamp} />
         ))}
       </div>
+      <ChatInput channelName={roomDetails ? roomDetails.name : ""} channelId={roomId} />
+
     </div>
   );
 }
