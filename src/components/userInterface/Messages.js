@@ -12,7 +12,7 @@ function Messages({ Username, UserImage, Message, Timestamp }) {
           {Username}{" "}
           <span className="messages__timestamp">
             {" "}
-            {new Date(Timestamp.toDate()).toUTCString()}
+            {Timestamp ? new Date(Timestamp.toDate()).toUTCString() : ""}
           </span>
         </h4>
         <p>{Message}</p>

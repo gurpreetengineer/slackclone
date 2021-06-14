@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import firebase from 'firebase'
 import db from '../../firebase/firebase';
 import { useStateValue } from '../../authentication/authContext';
+import '../uiCustomCss/ChatInput.css'
 
 function ChatInput({channelName, channelId}) {
   const [input, setInput] = useState("");
@@ -10,12 +11,12 @@ function ChatInput({channelName, channelId}) {
   const handleSubmit = e => {
     e.preventDefault();
 
-    if(channelId) {
+    if(channelId && input != "") {
       db.collection("rooms").doc(channelId).collection("messages").add({
         username: user.displayName,
         userImage: user.photoURL,
         message: input,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       })
     }
 
